@@ -1,0 +1,9 @@
+div.top-bar {
+    width: 300px;
+    margin: auto;
+    z-index: 1;
+}
+
+div.top-bar img {
+    width: 100%;
+}

@@ -1,0 +1,89 @@
+div.video-Age{
+    position: relative;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    overflow: hidden;
+    max-height: 80vh;
+}
+
+div.video-Age video{
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    
+}
+
+div.background{
+    width: 100%;
+    z-index: 0;
+    
+}
+
+video#videoBackground{
+    filter: blur(10px);
+    transform: scale(1.1);
+}
+
+div.foreground{
+    
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    justify-items: center;
+    
+    position: absolute;
+
+
+    justify-content: center;
+
+    z-index: 1;
+    align-self: center;
+    /* left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+    width: 85%;
+    overflow: hidden;
+    max-height: 85%;
+}
+
+div.foregroundInner{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    justify-items: center;
+    
+    position: absolute;
+    z-index: 2;
+    /* top: 50px; */
+    width: 100%;
+
+
+}
+
+div.logoGame{
+    margin: auto;
+    width: 30%;
+}
+
+div.logoGame img {
+    width: 100%;
+}
+
+div.authorName{
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    width: 30%;
+    color: white;
+    background-color: #791f1b;
+}
