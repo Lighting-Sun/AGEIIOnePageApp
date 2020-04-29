@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { VideoAgeComponent } from './video-age/video-age.component';
+import { PannelComponent } from './pannel/pannel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopBarComponent,
-    VideoAgeComponent
+    VideoAgeComponent,
+    PannelComponent,
   ],
   imports: [
     BrowserModule,
