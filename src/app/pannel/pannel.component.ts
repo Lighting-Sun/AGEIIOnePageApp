@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 import { products } from '../products';
 
@@ -10,6 +10,7 @@ import { products } from '../products';
 export class PannelComponent implements OnInit {
 
   products = products
+  @Input() subtitle;
 
   constructor() { }
 

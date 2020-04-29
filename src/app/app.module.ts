@@ -12,7 +12,7 @@ import { PannelComponent } from './pannel/pannel.component';
     AppComponent,
     TopBarComponent,
     VideoAgeComponent,
-    PannelComponent,
+    PannelComponent
   ],
   imports: [
     BrowserModule,

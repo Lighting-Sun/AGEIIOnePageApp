@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  subtitles:string[] = ['Civilizations','Units','Buildings','Technology'];
   title = 'AGEIIOnePageAPP';
+
 }
