@@ -1,0 +1,18 @@
+div.modalButton{
+
+    font-size: 1.1rem;
+    position:sticky;
+    bottom: 2px;
+    color: #cebe9d;
+    z-index: 3;
+    width: 6%;
+    left: 2px;
+    padding: 25px;
+    text-align: center;
+    border-style: solid;
+    border-image-source: url(../../assets/Borders/darkGreen.png);
+    border-image-slice: 40% fill;
+    border-image-repeat: repeat;
+    border-image-width: 5rem;
+}
+

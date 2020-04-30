@@ -7,6 +7,7 @@ body {
 }
 
 div.pannelView {
+  text-align: center;
   margin: auto;
   width: 80%;
   display: flex;
@@ -43,6 +44,17 @@ div.imageFocus {
 div.imageFocus img {
   width: 100%;
 }
+
+div.imageFocusBig{
+  padding: 0 5%;
+  width: 20%;
+  align-self: center;
+}
+
+div.imageFocusBig img{
+  width: 100%
+}
+
 
 #grid {
   position: relative;
@@ -102,14 +114,6 @@ div.imageFocus img {
 .hexagon:hover{
   cursor: pointer;
 }
-
-/* div.hexagon img{
-  margin-left: -23.5%;
-  margin-top: -15%;
-  border: 0;
-  height: 125%;
-  width: auto;
-} */
 
 .hexagon:hover img{
   margin-left: -10%;
@@ -176,7 +180,8 @@ ul {
 
 
 div.pannelView2 {
-  
+  align-self: center;
+  text-align: center;
   margin: auto;
   width: 80%;
   display: flex;
@@ -189,3 +194,4 @@ div.pannelView2 {
   border-image-repeat: repeat;
   border-image-width: 5rem;
 }
+

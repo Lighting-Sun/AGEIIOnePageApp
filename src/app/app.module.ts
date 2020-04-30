@@ -8,13 +8,15 @@ import { VideoAgeComponent } from './video-age/video-age.component';
 import { PannelComponent } from './pannel/pannel.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DataService } from './data.service';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopBarComponent,
     VideoAgeComponent,
-    PannelComponent
+    PannelComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,

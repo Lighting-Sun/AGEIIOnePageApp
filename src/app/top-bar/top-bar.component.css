@@ -4,6 +4,8 @@ body{
 }
 
 div.top-bar {
+    
+    padding-top: 8px;
     width: 300px;
     margin: auto;
     z-index: 1;

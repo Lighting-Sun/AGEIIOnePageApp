@@ -9,7 +9,7 @@
           <li *ngFor="let civilization of civilizationArray; let i = index">
             <a class="hexagon" (click)="onSelect(civilization)">
               <img *ngIf="options === 1" src="{{ urlIconCiv[i].Shield }}" alt="" />
-              <img *ngIf="options === 3" src="" alt="" />
+              <img *ngIf="options === 3" src="../../assets/Logos/AgeLogo.png" alt="" />
             </a>
           </li>
         </ul>
@@ -21,9 +21,9 @@
           <li><b>Army Type: </b>{{ selectedN.army_type }}</li>
         </ul>
         <ul *ngIf="options === 3">
-          <li>Name:{{ selectedStructure.name }}</li>
-          <li>Expansion:{{ selectedStructure.expansion }}</li>
-          <li>Age:{{ selectedStructure.age }}</li>
+          <li><b>Name: </b>{{ selectedStructure.name }}</li>
+          <li><b>Expansion: </b>{{ selectedStructure.expansion }}</li>
+          <li><b>Age: </b>{{ selectedStructure.age }}</li>
         </ul>
       </div>
     </div>
@@ -31,7 +31,7 @@
       <img src="{{ urlImg }}" alt="" />
     </div>
     <div class="imageFocusBig" *ngIf="options === 3">
-      <img src="{{ urlImg }}" alt="" />
+      <img src="../../assets/Logos/AgeLogo.png" alt="" />
     </div>
   </div>
 </body>
@@ -47,26 +47,26 @@
           <li *ngFor="let civilization of civilizationArray; let i = index">
             <div class="hexagon" (click)="onSelect(civilization)">
               <img *ngIf="options === 2" src="{{ urlIconUnits[i].ImageUnit }}" alt="" />
-              <img *ngIf="options === 4" src="" alt="" />
+              <img *ngIf="options === 4" src="../../assets/Logos/AgeLogo.png" alt="" />
             </div>
           </li>
         </ul>
       </div>
       <div class="information">
-        <ul *nfIf="options === 2">
-          <li><b> Name:</b>{{ selectedUnit.name }}</li>
-          <li><b>Expansion:</b>{{ selectedUnit.expansion }}</li>
-          <li><b>Age:</b>{{ selectedUnit.age }}</li>
+        <ul *ngIf="options === 2">
+          <li><b>Name: </b>{{ selectedUnit.name }}</li>
+          <li><b>Expansion: </b>{{ selectedUnit.expansion }}</li>
+          <li><b>Age: </b>{{ selectedUnit.age }}</li>
         </ul>
         <ul *ngIf="options === 4">
-          <li>Name:{{ selectedTechnology.name }}</li>
-          <li>Expansion:{{ selectedTechnology.expansion }}</li>
-          <li>Age:{{ selectedTechnology.age }}</li>
+          <li><b>Name: </b>{{ selectedTechnology.name }}</li>
+          <li><b>Expansion: </b>{{ selectedTechnology.expansion }}</li>
+          <li><b>Age: </b>{{ selectedTechnology.age }}</li>
         </ul>
       </div>
     </div>
     <div class="imageFocusBig" >
-      <img src="{{ urlImg }}" alt="" />
+      <img src="../../assets/Logos/AgeLogo.png" alt="" />
     </div>
   </div>
 </body>
