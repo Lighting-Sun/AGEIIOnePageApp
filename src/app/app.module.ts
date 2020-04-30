@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { VideoAgeComponent } from './video-age/video-age.component';
 import { PannelComponent } from './pannel/pannel.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DataService } from './data.service';
 
 @NgModule({
   declarations: [
@@ -16,9 +18,10 @@ import { PannelComponent } from './pannel/pannel.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

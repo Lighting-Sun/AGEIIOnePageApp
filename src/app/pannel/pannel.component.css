@@ -35,7 +35,7 @@ div.information {
 
 div.imageFocus {
   padding: 0 5%;
-  width: 15%;
+  width: 10%;
   margin: 0;
   align-self: center;
 }
@@ -71,6 +71,8 @@ div.imageFocus img {
   background: #fd005f;
   overflow: hidden;
   visibility: hidden;
+  
+  
 }
 
 #grid li * {
@@ -87,13 +89,46 @@ div.imageFocus img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #fdbf00;
+  background: #40152A;
   -o-transform: skewY(-30deg) rotate(60deg);
   -moz-transform: skewY(-30deg) rotate(60deg);
   -webkit-transform: skewY(-30deg) rotate(60deg);
   -ms-transform: skewY(-30deg) rotate(60deg);
   transform: skewY(-30deg) rotate(60deg);
   overflow: hidden;
+  
+}
+
+.hexagon:hover{
+  cursor: pointer;
+}
+
+/* div.hexagon img{
+  margin-left: -23.5%;
+  margin-top: -15%;
+  border: 0;
+  height: 125%;
+  width: auto;
+} */
+
+.hexagon:hover img{
+  margin-left: -10%;
+  margin-top: 0;
+  border: 0;
+  /* object-fit: cover; */
+  height: 100%;
+  width: auto;
+
+}
+
+.hexagon img{
+  margin-left: -26%;
+  margin-top: -15%;
+  border: 0;
+  /* object-fit: cover; */
+  height: 130%;
+  width: auto;
+  transition: all 0.3s ease-in-out;
 }
 
 #grid li:nth-child(22n + 12),
@@ -121,12 +156,35 @@ div.imageFocus img {
 }
 
 div.separator {
-  margin: auto;
+  
+  color: #cebe9d;
+  margin: 30px auto 0 auto;
   width: 80%;
   padding: 25px 0;
   text-align: center;
   border-style: solid;
   border-image-source: url(../../assets/Borders/darkOrange.png);
+  border-image-slice: 40% fill;
+  border-image-repeat: repeat;
+  border-image-width: 5rem;
+}
+
+ul {
+  color: #cebe9d;
+  list-style-type: none;
+}
+
+
+div.pannelView2 {
+  
+  margin: auto;
+  width: 80%;
+  display: flex;
+  padding: 50px 0;
+  justify-content: center;
+  flex-direction: row-reverse;
+  border-style: solid;
+  border-image-source: url(../../assets/Borders/lightOrange.png);
   border-image-slice: 40% fill;
   border-image-repeat: repeat;
   border-image-width: 5rem;

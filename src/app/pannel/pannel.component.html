@@ -1,27 +1,72 @@
-<body>
-    <div class="separator">
-      <h2> {{subtitle}} </h2>
-    </div>
-    <div class="pannelView">
-      <div class="hiveDetailsContainer">
-        <div class="hive">
-          <ul id="grid" class="clear">
-            <li *ngFor="let product of products">
-              <div class="hexagon"></div>
-            </li>
-          </ul>
-        </div>
-        <div class="information">
-          <ul>
-            <li>Nombre</li>
-            <li>Expansion</li>
-            <li>Army Type</li>
-          </ul>
-        </div>
+<body *ngIf="!orientation && isLoaded">
+  <div class="separator">
+    <h2>{{ subtitle }}</h2>
+  </div>
+  <div class="pannelView">
+    <div class="hiveDetailsContainer">
+      <div class="hive">
+        <ul id="grid" class="clear">
+          <li *ngFor="let civilization of civilizationArray; let i = index">
+            <a class="hexagon" (click)="onSelect(civilization)">
+              <img *ngIf="options === 1" src="{{ urlIconCiv[i].Shield }}" alt="" />
+              <img *ngIf="options === 3" src="" alt="" />
+            </a>
+          </li>
+        </ul>
       </div>
-      <div class="imageFocus">
-          <img src="../../assets/Logos/AgeLogo.png" alt="">
+      <div class="information">
+        <ul *ngIf="options === 1">
+          <li><b>Name: </b>{{ selectedN.name }}</li>
+          <li><b>Expansion: </b>{{ selectedN.expansion }}</li>
+          <li><b>Army Type: </b>{{ selectedN.army_type }}</li>
+        </ul>
+        <ul *ngIf="options === 3">
+          <li>Name:{{ selectedStructure.name }}</li>
+          <li>Expansion:{{ selectedStructure.expansion }}</li>
+          <li>Age:{{ selectedStructure.age }}</li>
+        </ul>
       </div>
     </div>
-  </body>
-  
+    <div class="imageFocus" *ngIf="options === 1">
+      <img src="{{ urlImg }}" alt="" />
+    </div>
+    <div class="imageFocusBig" *ngIf="options === 3">
+      <img src="{{ urlImg }}" alt="" />
+    </div>
+  </div>
+</body>
+
+<body *ngIf="orientation && isLoaded">
+  <div class="separator">
+    <h2>{{ subtitle }}</h2>
+  </div>
+  <div class="pannelView2">
+    <div class="hiveDetailsContainer">
+      <div class="hive">
+        <ul id="grid" class="clear">
+          <li *ngFor="let civilization of civilizationArray; let i = index">
+            <div class="hexagon" (click)="onSelect(civilization)">
+              <img *ngIf="options === 2" src="{{ urlIconUnits[i].ImageUnit }}" alt="" />
+              <img *ngIf="options === 4" src="" alt="" />
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="information">
+        <ul *nfIf="options === 2">
+          <li><b> Name:</b>{{ selectedUnit.name }}</li>
+          <li><b>Expansion:</b>{{ selectedUnit.expansion }}</li>
+          <li><b>Age:</b>{{ selectedUnit.age }}</li>
+        </ul>
+        <ul *ngIf="options === 4">
+          <li>Name:{{ selectedTechnology.name }}</li>
+          <li>Expansion:{{ selectedTechnology.expansion }}</li>
+          <li>Age:{{ selectedTechnology.age }}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="imageFocusBig" >
+      <img src="{{ urlImg }}" alt="" />
+    </div>
+  </div>
+</body>

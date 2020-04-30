@@ -1,3 +1,7 @@
   <app-top-bar></app-top-bar>
   <app-video-age></app-video-age>
-  <app-pannel *ngFor="let subtitle of subtitles" [subtitle]="subtitle" ></app-pannel>
+  <app-pannel [options]="1" [subtitle]=subtitles[0]></app-pannel>
+  <app-pannel [options]="2" [subtitle]=subtitles[1]></app-pannel>
+  <app-pannel [options]="3" [subtitle]=subtitles[2]></app-pannel>
+  <app-pannel [options]="4" [subtitle]=subtitles[3]></app-pannel>
+
